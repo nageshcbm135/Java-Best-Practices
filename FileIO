@@ -1,0 +1,4 @@
+Alway Close Streams - To avoid memory leak, close the FileInput and output stream objects after it has been used.  
+The best place to close this is in finally block.  
+Check if the object is not null then close.
+The finally will ensure to close the object even if there is any error in processing streams.  This will avoid the major memory leaks.
